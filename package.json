@@ -1,0 +1,43 @@
+{
+  "name": "rag-chatbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.2.1",
+    "eslint": "^10.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "prettier": "^3.8.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.54.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "node --loader ts-node/esm src/main.ts",
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "ingest": "tsx src/cli/ingest.ts",
+    "chat": "tsx src/chat.ts",
+    "debug:query": "tsx src/cli/debug-query.ts"
+  },
+  "dependencies": {
+    "@langchain/classic": "^1.0.15",
+    "@langchain/community": "^1.1.12",
+    "@langchain/core": "^1.1.19",
+    "@langchain/openai": "^1.2.5",
+    "@langchain/textsplitters": "^1.0.1",
+    "chromadb": "^3.2.2",
+    "dotenv": "^17.2.4",
+    "langchain": "^1.2.18",
+    "openai": "^6.18.0",
+    "pdf-parse": "1",
+    "zod": "^4.3.6"
+  }
+}
