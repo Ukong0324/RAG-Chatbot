@@ -51,7 +51,7 @@ src/
     vectorstore.ts   # Chroma vector store wiring
     chromaClient.ts  # ChromaClient wiring (admin ops / injection)
     metadata.ts      # Chroma-safe metadata sanitizer
-    
+
 chat.ts          # Chat loop with evidence gating + citations
 ```
 
@@ -117,8 +117,8 @@ Example:
 ```txt
 data/
   attention is all you need.pdf
-  notes.txt
-  syllabus.md
+  book.txt
+  notes.md
 ```
 
 ### 2) Ingest
